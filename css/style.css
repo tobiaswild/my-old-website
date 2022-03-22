@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #262626;
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    user-select: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 90%;
+    max-width: 95%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+nav a {
+    float: left;
+    padding: 12px;
+    color: inherit;
+    text-decoration: inherit;
+    font-size: 17px;
+    width: 20%;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+main a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+}
+
+.project {
+    background-color: gray;
+    border-radius: 10px;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
